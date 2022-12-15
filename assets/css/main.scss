@@ -1,0 +1,88 @@
+@import './carousel.scss';
+@import './vue-select-image.scss';
+@import './carrito.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nuxt-link-exact-active {
+  color: #d1e70c !important;
+  text-decoration: underline #d1e70c;
+}
+
+.navbar-nav {
+  a {
+    position: relative;
+  }
+
+  > li > a::before , >li > form > li > a::before,  >li > form > a::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #d1e70c;
+    bottom: 0;
+    left: 20%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .nav-link {
+    color: rgb(255 255 255);
+  }
+}
+
+#indexJumbotron {
+  #header_img {
+    background-image: url('../img/header.webp');
+    background-size: cover;
+  }
+
+  .col-5 {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 576px) {
+    padding: 0 0 0 2rem;
+    height: 500px;
+
+    .row {
+      height: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+
+
+#datosCuenta {
+  border-width: 2px !important;
+  border-style: groove !important;
+  border-color: rgb(192, 192, 192) !important;
+  border-image: initial !important;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario {
+  width: 90%;
+  margin: 20px auto;
+}
+
+#addIngredient {
+  margin: 0 auto;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
