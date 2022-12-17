@@ -1,10 +1,10 @@
 <template>
     <div style="    position: sticky;top: 0;z-index: 999;">
-        <b-navbar toggleable="lg" type="dark" variant="danger" sticky:true>
+        <b-navbar toggleable="lg" type="dark" class="navbar-color" sticky:true>
 
             <b-navbar-brand>
                 <NuxtLink to="/" class="navbar-brand">
-                    Logo
+                    <img src="img/logo.png" width="60px" alt="" srcset="">
                 </NuxtLink>
             </b-navbar-brand>
 
@@ -141,6 +141,18 @@
     background-color: transparent;
     border: 0;
     text-decoration: none;
+}
+.navbar-color{
+    background: #f5ebdc;
+    color: #571a0d;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: #571a0d;
+    background: #cf302a41;
+    border-radius: 5px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #571a0d;
 }
 </style>
 

@@ -71,7 +71,7 @@ export default {
 
 <style scoped lang="scss">
 footer{
-    background-color: #575755;
+    background-color: #502314;
     color:#fff;
 }
     .text-muted{

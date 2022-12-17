@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <h1 class="title">Login in the page</h1>
+    <h1 class="title">Iniciar sesión</h1>
     <form action class="form formulario" @submit.prevent="login">
       <label class="form-label" for="#email">Email:</label>
       <input v-model="email" class="form-input" type="email" id="email" required placeholder="Email">
@@ -78,7 +78,7 @@ export default {
   width: 20%;
   min-width: 350px;
   max-width: 100%;
-  background: rgba(19, 35, 47, 0.9);
+  background: #e0782f;
   border-radius: 5px;
   padding: 40px;
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
@@ -108,7 +108,7 @@ export default {
 }
 
 .form-submit {
-  background: #1ab188;
+  background: #571a0d;
   border: none;
   color: white;
   margin-top: 3rem;
